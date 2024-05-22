@@ -1,0 +1,17 @@
+name: ad-prediction
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - pandas
+  - pre-commit
+  - matplotlib
+  - seaborn
+  - ruff
+  - ipykernel
+  - openpyxl
+  - scikit-learn
+  - pip
+  - pip:
+    - rnanorm
+
