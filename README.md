@@ -1,6 +1,6 @@
-# Alzheimer's Disease Prediction
+# Breast Cancer Recurrence Prediction
 
-This is an analysis of Alzheimer's Disease (AD) gene expression data from three independent studies.
+This is an analysis of breast cancer SILVER-seq gene expression data from [Zhou et al.](https://www.pnas.org/doi/10.1073/pnas.1908252116).
 
 This is companion code to the final project for BENG 203 / CSE 283 (SP24) authored by **Daira Melendez** (), **Raimon Padrós I Valls** (A59025488), and **Lucas Patel** (A13041630).
 
@@ -16,34 +16,36 @@ Follow these steps to install and configure the repository:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/lucaspatel/cse283-final
+    git clone https://github.com/lucaspatel/breast-cancer-recurrence
     ```
 2. Change directory to the cloned respository:
     ```bash
-    cd cse283-final
+    cd breast-cancer-recurrence
     ```
-3. Next, configure the conda environment and other dependencies as follows:
+3. Next, configure the conda environment and other dependencies with `make`. This step will also download all the required datasets:
     ```bash
     make setup
     ```
 4. Activate the conda environment:
    ```bash
-   conda activate ad-prediction
+   conda activate beng203
    ```
 
 ## Usage
-Usage may vary depending on use case.
+Usage is not yet determined. Consider exploring the `scripts` directory or the `explore.ipynb` notebook.
 
 ```python
 ```
 
 ## Development
+Currently...
 
 ## Troubleshooting
 > I'm having trouble with the `make setup` command. Specifically, my terminal just says "Solving Environment" and never finishes!
+
 This is a well-known problem with conda. If you have [mamba](https://mamba.readthedocs.io/en/latest/) installed, you can try directly configuring the environment:
 ```bash
-mamba env create --name admix -f environment.yml
+mamba env create --name beng203 -f environment.yml
 ```
 
 ## Contributing
@@ -59,4 +61,4 @@ We welcome contributions from the community. If you're interested in improving t
 This project is licensed under the MIT License. For more details, see the `LICENSE` file in the project repository.
 
 ## Acknowledgments
-Data is derived from [Yan et al.](https://www.cell.com/current-biology/fulltext/S0960-9822(20)30291-8), [Toden et al.](https://www.science.org/doi/10.1126/sciadv.abb1654), and [Burgos et al.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0094839) and curated by [the Zhong Lab](https://github.com/Zhong-Lab-UCSD/AD_prediction_blood).
+Data is derived from [Zhou et al.](https://www.pnas.org/doi/10.1073/pnas.1908252116) and curated by [the Zhong Lab](https://github.com/Zhong-Lab-UCSD/breast_cancer_recurrence_classifier).

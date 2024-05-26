@@ -1,4 +1,4 @@
-ENV_RUN := conda run -n ad-prediction
+ENV_RUN := conda run -n beng203
 
 .PHONY: help \
         setup \
@@ -12,7 +12,7 @@ ENV_RUN := conda run -n ad-prediction
 
 help:
 	@echo
-	@echo "AD Prediction Makefile"
+	@echo "Breast Cancer Recurrence Makefile"
 	@echo
 	@echo "Usage:"
 	@echo
@@ -37,7 +37,7 @@ help:
 
 download_data:
 	@echo "Downloading counts data..."
-	@git clone https://github.com/Zhong-Lab-UCSD/AD_prediction_blood data || { echo "Failed to download data"; exit 1; }
+	@git clone https://github.com/Zhong-Lab-UCSD/breast_cancer_recurrence_classifier data || { echo "Failed to download data"; exit 1; }
 	@echo "Downloading gene annotation data..."
 	@mkdir -p ref  # Ensure the ref directory exists
 	@curl -o ref/Homo_sapiens.GRCh38.84.chr.gtf.gz http://ftp.ensembl.org/pub/release-84/gtf/homo_sapiens/Homo_sapiens.GRCh38.84.chr.gtf.gz || { echo "Failed to download GTF file"; exit 1; }

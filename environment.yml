@@ -1,4 +1,4 @@
-name: ad-prediction
+name: beng203
 channels:
   - conda-forge
 dependencies:
