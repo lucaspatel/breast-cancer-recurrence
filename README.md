@@ -1,6 +1,6 @@
 # Breast Cancer Recurrence Prediction
 
-This is an analysis of breast cancer SILVER-seq gene expression data from [Zhou et al.](https://www.pnas.org/doi/10.1073/pnas.1908252116).
+This is an analysis of breast cancer SILVER-seq gene expression data from [Zhou et al.](https://www.pnas.org/doi/10.1073/pnas.1908252116)
 
 This is companion code to the final project for BENG 203 / CSE 283 (SP24) authored by **Daira Melendez** (), **Raimon Padrós I Valls** (A59025488), and **Lucas Patel** (A13041630).
 
