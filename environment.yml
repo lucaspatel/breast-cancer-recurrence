@@ -4,6 +4,7 @@ channels:
 dependencies:
   - python=3.9
   - pandas
+  - numpy
   - pre-commit
   - matplotlib
   - seaborn
@@ -11,8 +12,8 @@ dependencies:
   - ipykernel
   - openpyxl
   - scikit-learn
+  - xgboost
   - jupyter
   - pip
   - pip:
     - rnanorm
-
